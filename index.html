@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+    <title>Fill-In-The-Blanks Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://i.ibb.co/5sxSWJf/fitb-logo.png" alt="FITB Word Games Logo">
+    </section>
+
+    <section id="main">
+      <h1>Fill in the blanks to generate a story.</h1>
+      <hr>
+      <form action="story.html" method="GET">
+        <label for="object-1">Object 1:</label>
+          <input id="object-1" type="text" name="object-1" required>
+          <br>
+        <label for="object-2">Object 2:</label>
+          <input id="object-2" type="text" name="object-2" required>
+          <br>
+        <label for="object-3">Object 3:</label>
+          <input id="object-3" type="text" name="object-3" required>
+          <br>
+        <label for="object-4">Object 4:</label>
+          <input id="object-4" type="text" name="object-4" required>
+          <br>
+        <label for="existential-threat-1">Existential Threat 1:</label>
+          <input id="existential-threat-1" type="text" name="existential-threat-1" required>
+          <br>
+        <label for="existential-threat-2">Existential Threat 2:</label>
+          <input id="existential-threat-2" type="text" name="existential-threat-2" required>
+          <br>
+        <label for="existential-threat-3">Existential Threat 3:</label>
+          <input id="existential-threat-3" type="text" name="existential-threat-3" required>
+          <br>
+        <label for="existential-threat-4">Existential Threat 4:</label>
+          <input id="existential-threat-4" type="text" name="existential-threat-4" required>
+          <br>
+        <label for="adjective">Adjective:</label>
+          <input id="adjective" type="text" name="adjective" required>
+          <br>
+        <label for="silly-name-1">Silly Name 1:</label>
+          <input id="silly-name-1" type="text" name="silly-name-1" required>
+          <br>
+        <label for="silly-name-2">Silly Name 2:</label>
+          <input id="silly-name-2" type="text" name="silly-name-2" required>
+          <br>
+        <label for="size-increment">Size Increment:</label>
+          <select id="size-increment" name="size-increment">
+            <option value="teeny-tiny">teeny tiny</option>
+            <option value="infinitesmal">infinitesmal</option>
+            <option value="teeny-tiny">decent-sized</option>
+            <option value="hugh-mungus">enormous</option>
+            <option value="hugh-mungus">Hugh Mungus</option>
+            </select>
+            <br>
+        <label for="year">Year:</label>
+          <input id="year" name="year" type="number" min="0" max="9999" required>
+          <br>
+        <label for="number">Number:</label>
+          <input id="number" name="number" type="number" min="4" max="9999999" required>
+          <br>
+        <label for="rendezvous">Rendezvous (preposition, place, time):</label>
+          <input id="rendezvous" name="rendezvous" type="text" required list="rendezvous-choices">
+            <datalist id="rendezvous-choices">
+              <option value="under the fig tree at 3:00pm"></option>
+              <option value="at your mom's house at midnight"></option>
+              <option value="in the tar pit at high noon"></option>
+            </datalist>
+            <br>
+        <label for="negative-personality-trait">Negative Personality Trait:</label>
+          <input id="negative-personality-trait" name="negative-personality-trait" type="text" required list="negative-personality-trait-choices">
+            <datalist id="negative-personality-trait-choices">
+              <option value="vindictive">vindictive</option>
+              <option value="hypocritical">hypocritical</option>
+              <option value="narcissistic">narcissistic</option>
+              <option value="aggressive">aggressive</option> 
+              <option value="frivolous">frivolous</option>
+            </datalist>
+            <br>
+        <label for="positive-personality-trait">Positive Personality Trait:</label>
+          <input id="positive-personality-trait" name="positive-personality-trait" type="text" required list="positive-personality-trait-choices">
+            <datalist id="positive-personality-trait-choices">
+              <option value="forgiving">forgiving</option>
+              <option value="intelligent">intelligent</option>
+              <option value="disciplined">disciplined</option> 
+              <option value="patient">patient</option>
+              <option value="clear-headed">clear-headed</option>
+            </datalist>
+            <br>
+          <label for="person-title">Title:</label>
+          <input id="person-title" name="person-title" type="text" required list="title-choices">
+            <datalist id="title-choices">
+              <option value="supreme">Supreme</option>
+              <option value="emperor">Emperor</option>
+              <option value="empress">Empress</option>
+              <option value="king">King</option> 
+              <option value="Queen">Queen</option>
+            </datalist>
+            <br>
+          <label for="insult">Insult:</label>
+          <input id="insult" name="insult" type="text" required list="insult-choices">
+            <datalist id="insult-choices">
+              <option value="scallywag">Scallywag</option>
+              <option value="troglodyte">Troglodyte</option>
+              <option value="village-idiot">Village Idiot</option>
+              <option value="egg">Egg</option> 
+              <option value="numbskull">Numbskull</option>
+            </datalist>
+            <br>
+          <label for="contest-type">Contest Type:</label>
+          <input id="contest-type" name="contest-type" type="text" required list="contest-type-choices">
+            <datalist id="contest-type-choices">
+              <option value="battle-of-wits">battle of wits</option>
+              <option value="fisticuffs">fisticuffs</option>
+              <option value="staring-contest">staring contest</option>
+              <option value="dance-off">dance-off</option> 
+              <option value="joust">joust</option>
+            </datalist>
+            <br>
+        <label for="message">Meaningful Message:</label>
+          <textarea id="message" name="message" required rows="8" cols="40"></textarea>
+          <br>
+        <hr>
+        <input type="submit" value="Create Story">
+      </form>
+      
+    </section>
+  </body>
+</html>
